@@ -25,7 +25,23 @@ Installation:
 ##########################################################
 Usage: (once installed)
  
- Linux: (TODO)
+ Linux: 
+ 
+ before you compile vdfuse you need to run this command.
+
+sudo apt install libfuse-dev virtualbox pkg-config
+
+libfuse-dev has the required header files for vdfuse to compile.
+virtualbox has pre-compiled drivers needed for mounting disk images.
+pkg-config is used by a script when compiling vdfuse.
+Now with all the required files and binaries, let compile vdfuse.
+
+So the commands you need to run to compile vdfuse are as follows:
+
+./autogen.sh
+./configure
+make
+sudo make install
 
 
  OSX: 
